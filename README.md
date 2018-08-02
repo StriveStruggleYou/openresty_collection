@@ -2,8 +2,9 @@
 learn openresty and some demo
 
 
-lua api,
+lua api
 
 lua waf
 
+lua library
 
