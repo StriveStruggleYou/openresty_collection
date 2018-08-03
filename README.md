@@ -8,3 +8,5 @@ lua waf
 
 lua library
 
+lua c
+
