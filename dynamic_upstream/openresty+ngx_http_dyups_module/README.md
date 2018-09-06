@@ -19,3 +19,63 @@
 ### 5.使用了这个模块进行dynamic_upstream控制后，依赖的负载均衡是nginx本身的负载均衡，如果一些特殊的负载很难实现。还有我们需要实现一个持久化的过程（写在文件里也可以的）。不然一旦重启很难恢复。
 
 ### 6.推荐博客：https://www.jishuboke.com/article/41
+
+--------------------
+## Directives
+
+Syntax: **dyups_interface**
+
+Default: `none`
+
+Context: `loc`
+
+This directive set the interface location where you can add or delete the upstream list. See the section of Interface for detail.
+
+
+Syntax: **dyups_read_msg_timeout** `time`
+
+Default: `1s`
+
+Context: `main`
+
+This directive set the interval of workers readding the commands from share memory.
+
+
+Syntax: **dyups_shm_zone_size** `size`
+
+Default: `2MB`
+
+Context: `main`
+
+This directive set the size of share memory which used to store the commands.
+
+
+Syntax: **dyups_upstream_conf** `path`
+
+Default: `none`
+
+Context: `main`
+
+This directive has been deprecated
+
+
+Syntax: **dyups_trylock** `on | off`
+
+Default: `off`
+
+Context: `main`
+
+You will get a better prefomance but it maybe not stable, and you will get a '409' when the update request conflicts with others.
+
+
+Syntax: **dyups_read_msg_log** `on | off`
+
+Default: `off`
+
+Context: `main`
+
+You can enable / disable log of workers readding the commands from share memory. The log looks like:
+
+```
+2017/02/28 15:37:53 [info] 56806#0: [dyups] has 0 upstreams, 1 static, 0 deleted, all 1
+```
