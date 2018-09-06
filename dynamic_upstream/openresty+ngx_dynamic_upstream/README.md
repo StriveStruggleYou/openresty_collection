@@ -14,6 +14,8 @@
 查看模块信息方式 curl "http://127.0.0.1:6000/dynamic?upstream=zone_for_backends"
 ![](https://github.com/StriveStruggleYou/openresty_collection/blob/master/dynamic_upstream/openresty%2Bngx_dynamic_upstream/data/ab09a61f-6de4-4085-80c0-a158a3b073b4.png)
 
+### 5.使用了这个模块进行dynamic_upstream控制后，依赖的负载均衡是nginx本身的负载均衡，如果一些特殊的负载很难实现。还有我们需要实现一个持久化的过程（写在文件里也可以的）。不然一旦重启很难恢复。这两个模块都差不多的。
+
 
 ------------
 
