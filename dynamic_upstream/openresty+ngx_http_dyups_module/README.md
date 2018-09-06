@@ -16,7 +16,4 @@
 所有upstream操作如图所示
 ![](https://github.com/StriveStruggleYou/openresty_collection/blob/master/dynamic_upstream/openresty%2Bngx_http_dyups_module/data/9c9987f9-77cf-42c5-9a82-66cfe3eb3347.png)
 
-
-
-
-
+### 5.使用了这个模块进行dynamic_upstream控制后，发现是一个超级大粒度的模块控制。只能要新增删除模块，一个upstream里面的扩容缩容是无法做到的。目前和我们的实际需求不够符合。
