@@ -2,7 +2,7 @@
 
 ### 安装步骤
 
-### 1. 下载openresty wget https://openresty.org/download/openresty-1.13.6.2.tar.gz
+### 1. 下载openresty <a>wget https://openresty.org/download/openresty-1.13.6.2.tar.gz</a>
 
 ### 2. 在解压的openresty 目录下 下载 ngx_http_dyups_module 模块 git clone git://github.com/yzprofile/ngx_http_dyups_module.git
 
