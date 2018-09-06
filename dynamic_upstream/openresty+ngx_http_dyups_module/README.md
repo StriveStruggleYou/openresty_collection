@@ -11,9 +11,9 @@
 ### 4.使用模块很简单 
 ![](https://github.com/StriveStruggleYou/openresty_collection/blob/master/dynamic_upstream/openresty%2Bngx_http_dyups_module/data/97828263-5a34-4b09-bcbd-352f78e5db90.png)
 </br>
-查看模块信息方式
+查看模块信息方式 curl http://127.0.0.1:9090/detail
 ![](https://github.com/StriveStruggleYou/openresty_collection/blob/master/dynamic_upstream/openresty%2Bngx_http_dyups_module/data/65f52d87-b3aa-4d40-850f-c43ed3b0fc36.png)
-
+所有upstream操作如图所示 
 
 
 
