@@ -8,3 +8,12 @@
         ngx.log(ngx.ERR, "headers=>", k .. ":" .. v)
     end
     ```
+
+### 2.根据cookie 内容进行判断
+```local ck = require "resty.cookie"
+local cookie, err = ck:new()
+if not cookie then
+    ngx.log(ngx.ERR, err)
+    return
+end
+```
