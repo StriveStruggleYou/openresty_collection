@@ -17,3 +17,13 @@ if not cookie then
     return
 end
 ```
+
+### 3.根据url参数 进行内容判断
+```local arg = ngx.req.get_uri_args()
+
+for k,v in pairs(arg) do
+    ngx.log(ngx.ERR, "url pairs: ", k.." ==> "..v)
+end
+```
+
+###
