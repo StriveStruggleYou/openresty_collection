@@ -1,12 +1,5 @@
-# openresty_collection
-learn openresty and some demo
+# openresty_collection learn openresty
 
+## how to build dynamic_upstream
 
-lua api
-
-lua waf
-
-lua library
-
-lua c
-
+##
