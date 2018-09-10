@@ -29,7 +29,8 @@ end
 ###
 
 ### 4.根据post body内容进行判断
-```  ngx.req.read_body() -- 解析 body 参数之前一定要先读取 body
+```
+  ngx.req.read_body() -- 解析 body 参数之前一定要先读取 body
   local arg = ngx.req.get_post_args()
   for k,v in pairs(arg) do
       ngx.log("[POST] key:", k, " v:", v)
