@@ -50,3 +50,9 @@
 ngx.req.read_body()在 balancer_by_lua_* 模块是不能使用，只能全局进行设置
 lua_need_request_body on;
 ```
+
+-------
+### 测试命令推荐
+```
+curl -l -H "Content-type: application/json" -X POST -d '{"phone":"sadad","password":"test"}' 127.0.0.1:9000/1111?na23=12
+```
