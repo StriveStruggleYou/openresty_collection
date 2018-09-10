@@ -32,11 +32,21 @@
 
 ### 4.根据post body内容进行判断
 ```
-  ngx.req.read_body() -- 解析 body 参数之前一定要先读取 body
   local arg = ngx.req.get_post_args()
   for k,v in pairs(arg) do
       ngx.log("[POST] key:", k, " v:", v)
   end
 ```
+---------------
+### 注意事项1：根据cookie的时候需要一个新的模块 lua-resty-cookie
+```
+  需要设置库的路径
+  lua_package_path "/Users/*/*/*/*/lua/lua-resty-cookie/lib/?.lua;;";
+  require "resty.cookie"
+```
 
-### 5.
+### 注意事项2：根据post body内容进行判断
+```
+ngx.req.read_body()在 balancer_by_lua_* 模块是不能使用，只能全局进行设置
+lua_need_request_body on;
+```
